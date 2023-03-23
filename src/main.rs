@@ -27,10 +27,10 @@ fn get_image(img: DynamicImage, scale: u32) -> String {
             ascii_art.push(get_str_emoji(rgb));
         }
         if y % (scale * 2) == 0 {
-            ascii_art.push('\n');
+            emoji_art.push('\n');
         }
     }
-    ascii_art
+    emoji_art
 }
 
 fn get_str_emoji(rgb: [u8; 3]) -> char {
