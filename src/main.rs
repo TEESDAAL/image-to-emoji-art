@@ -24,7 +24,7 @@ fn get_image(img: DynamicImage, scale: u32) -> String {
             }
             let pixel = img.get_pixel(x, y);
             let rgb = [pixel[0], pixel[1], pixel[2]];
-            ascii_art.push(get_str_emoji(rgb));
+            emoji_art.push(get_str_emoji(rgb));
         }
         if y % (scale * 2) == 0 {
             emoji_art.push('\n');
